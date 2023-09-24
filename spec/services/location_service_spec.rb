@@ -3,10 +3,9 @@ require "rails_helper"
 RSpec.describe "Location Service" do
   describe "#class methods" do
     it "can retrieve information about a specific place" do
-      city = "Portland"
-      state = "OR"
+      location = "Portland,OR"
 
-      location = LocationService.get_long_lat(city, state)
+      location = LocationService.get_long_lat(location)
 
       expect(location).to be_a(Hash)
       expect(location).to have_key(:info)
