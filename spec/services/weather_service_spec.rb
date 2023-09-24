@@ -1,12 +1,12 @@
 require "rails_helper"
 
-RSpec.describe "Weather Service" do
+RSpec.describe "Forecast Service" do
   describe "#class_methods" do
     it "can get forecasted weather for 5 days" do
       lat = "45.51179"
       long = "-122.67563"
-      
-      forecast = WeatherService.get_forecast(lat, long)
+
+      forecast = ForecastService.get_forecast(lat, long)
 
       expect(forecast).to be_a(Hash)
       expect(forecast).to have_key(:location)
