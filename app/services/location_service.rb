@@ -1,7 +1,7 @@
 class LocationService
 
-  def self.get_long_lat(city, state)
-    get_url("address?location=#{city},#{state}")
+  def self.get_long_lat(location)
+    get_url("address?location=#{location}")
   end
 
   def self.get_url(url)
