@@ -12,6 +12,7 @@ RSpec.describe "Location Service" do
       expect(location).to have_key(:start)
       expect(location).to have_key(:numFoundExact)
       expect(location[:docs]).to be_an(Array)
+      expect(location[:docs][0]).to have_key(:title)
     end
   end
 end
