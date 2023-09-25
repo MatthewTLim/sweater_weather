@@ -1,34 +1,35 @@
 class Api::V0::BookSearchController < ApplicationController
   def search
-    location = params[:location]
     quantity = params[:quantity].to_i
 
     unless quantity > 0
-      render json: { error: 'Quantity must be a positive integer greater than 0' }, status: :bad_request
-      return
+      return render_error('Quantity must be a positive integer greater than 0')
     end
 
     location_facade = LocationFacade.new
     forecast_facade = ForecastFacade.new
     book_search_facade = BookSearchFacade.new
 
-    location_details = location_facade.receive_lat_lng(location)
+    location_details = location_facade.receive_lat_lng(params[:location])
 
     lat = location_details.lat
     lng = location_details.lng
 
     forecast = forecast_facade.receive_forecast(lat, lng)
-    books = book_search_facade.receive_book_search(location)
+    books_response = book_search_facade.receive_book_search(params[:location])
 
-    destination = location
+    render_books_response(params[:location], forecast, books_response, quantity)
+  end
 
-    forecast = {
-      summary: forecast.current_weather[:condition],
-      temperature: "#{forecast.current_weather[:temp_f].to_i} F"
-    }
+  private
 
-    total_books_found = books.total_books_found
-    books_details = books.books.first(quantity)
+  def render_error(message)
+    render json: { error: message }, status: :bad_request
+  end
+
+  def render_books_response(destination, forecast, books_response, quantity)
+    total_books_found = books_response.total_books_found
+    books_details = books_response.books.first(quantity)
 
     response_data = {
       data: {
@@ -36,7 +37,7 @@ class Api::V0::BookSearchController < ApplicationController
         type: 'books',
         attributes: {
           destination: destination,
-          forecast: forecast,
+          forecast: formatted_forecast(forecast),
           total_books_found: total_books_found,
           books: books_details
         }
@@ -44,5 +45,12 @@ class Api::V0::BookSearchController < ApplicationController
     }
 
     render json: response_data
+  end
+
+  def formatted_forecast(forecast)
+    {
+      summary: forecast.current_weather[:condition],
+      temperature: "#{forecast.current_weather[:temp_f].to_i} F"
+    }
   end
 end
