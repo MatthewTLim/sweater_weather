@@ -1,0 +1,198 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/forecast.json?days=5&key=020cef30cce548b390a20037232409&q=45.51179,-122.67563
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 26 Sep 2023 20:59:50 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-LA1-1001
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '400169610'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - '09/26/2023 20:57:42'
+      Cdn-Edgestorageid:
+      - '985'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - 887222857ae2fa5d3fc4d849472b9618
+      Cdn-Cache:
+      - HIT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"Portland","region":"Oregon","country":"United
+        States of America","lat":45.51,"lon":-122.68,"tz_id":"America/Los_Angeles","localtime_epoch":1695761860,"localtime":"2023-09-26
+        13:57"},"current":{"last_updated":"2023-09-26 13:45","temp_f":66.0,"condition":{"text":"Partly
+        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png"},"humidity":56,"cloud":75,"feelslike_f":66.0,"vis_miles":9.0,"uv":4.0},"forecast":{"forecastday":[{"date":"2023-09-26","day":{"maxtemp_f":65.3,"mintemp_f":52.3,"totalsnow_cm":0.0,"condition":{"text":"Moderate
+        rain","icon":"//cdn.weatherapi.com/weather/64x64/day/302.png"}},"astro":{"sunrise":"07:03
+        AM","sunset":"07:01 PM"},"hour":[{"time":"2023-09-26 00:00","temp_f":54.4,"condition":{"text":"Partly
+        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-26
+        01:00","temp_f":53.8,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-26
+        02:00","temp_f":57.7,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-26
+        03:00","temp_f":53.4,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-26
+        04:00","temp_f":53.3,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-26
+        05:00","temp_f":57.2,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/119.png"}},{"time":"2023-09-26
+        06:00","temp_f":52.3,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-26
+        07:00","temp_f":52.4,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-26
+        08:00","temp_f":57.2,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/119.png"}},{"time":"2023-09-26
+        09:00","temp_f":56.3,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-26
+        10:00","temp_f":59.8,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-26
+        11:00","temp_f":57.7,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/day/122.png"}},{"time":"2023-09-26
+        12:00","temp_f":64.6,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-26
+        13:00","temp_f":66.0,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png"}},{"time":"2023-09-26
+        14:00","temp_f":63.7,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/119.png"}},{"time":"2023-09-26
+        15:00","temp_f":63.8,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-26
+        16:00","temp_f":65.3,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-26
+        17:00","temp_f":63.9,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/119.png"}},{"time":"2023-09-26
+        18:00","temp_f":58.3,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-26
+        19:00","temp_f":56.7,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-26
+        20:00","temp_f":62.2,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-26
+        21:00","temp_f":54.5,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/night/353.png"}},{"time":"2023-09-26
+        22:00","temp_f":54.5,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-26
+        23:00","temp_f":57.2,"condition":{"text":"Light rain","icon":"//cdn.weatherapi.com/weather/64x64/night/296.png"}}]},{"date":"2023-09-27","day":{"maxtemp_f":62.1,"mintemp_f":52.5,"totalsnow_cm":0.0,"condition":{"text":"Moderate
+        rain","icon":"//cdn.weatherapi.com/weather/64x64/day/302.png"}},"astro":{"sunrise":"07:04
+        AM","sunset":"06:59 PM"},"hour":[{"time":"2023-09-27 00:00","temp_f":54.2,"condition":{"text":"Overcast","icon":"//cdn.weatherapi.com/weather/64x64/night/122.png"}},{"time":"2023-09-27
+        01:00","temp_f":54.4,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-27
+        02:00","temp_f":54.6,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-27
+        03:00","temp_f":54.7,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-27
+        04:00","temp_f":54.7,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-27
+        05:00","temp_f":54.8,"condition":{"text":"Light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/night/266.png"}},{"time":"2023-09-27
+        06:00","temp_f":54.6,"condition":{"text":"Light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/night/266.png"}},{"time":"2023-09-27
+        07:00","temp_f":54.6,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-27
+        08:00","temp_f":55.0,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-27
+        09:00","temp_f":55.8,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-27
+        10:00","temp_f":55.3,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-27
+        11:00","temp_f":55.8,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-27
+        12:00","temp_f":59.9,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-27
+        13:00","temp_f":61.1,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-27
+        14:00","temp_f":61.3,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-27
+        15:00","temp_f":61.9,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-27
+        16:00","temp_f":62.1,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-27
+        17:00","temp_f":61.5,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-27
+        18:00","temp_f":60.5,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-27
+        19:00","temp_f":58.0,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-27
+        20:00","temp_f":56.6,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-27
+        21:00","temp_f":55.0,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-27
+        22:00","temp_f":53.6,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-27
+        23:00","temp_f":52.5,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}}]},{"date":"2023-09-28","day":{"maxtemp_f":59.4,"mintemp_f":48.3,"totalsnow_cm":0.0,"condition":{"text":"Patchy
+        rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},"astro":{"sunrise":"07:05
+        AM","sunset":"06:57 PM"},"hour":[{"time":"2023-09-28 00:00","temp_f":51.2,"condition":{"text":"Patchy
+        rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-28
+        01:00","temp_f":50.2,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-28
+        02:00","temp_f":49.6,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-28
+        03:00","temp_f":49.0,"condition":{"text":"Patchy light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/night/263.png"}},{"time":"2023-09-28
+        04:00","temp_f":48.6,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/night/353.png"}},{"time":"2023-09-28
+        05:00","temp_f":48.3,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-28
+        06:00","temp_f":48.3,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-28
+        07:00","temp_f":48.3,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-28
+        08:00","temp_f":49.3,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-28
+        09:00","temp_f":50.3,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-28
+        10:00","temp_f":51.6,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/119.png"}},{"time":"2023-09-28
+        11:00","temp_f":54.8,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-28
+        12:00","temp_f":56.3,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-28
+        13:00","temp_f":57.9,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-28
+        14:00","temp_f":59.4,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-28
+        15:00","temp_f":59.4,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-28
+        16:00","temp_f":59.2,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-28
+        17:00","temp_f":59.1,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2023-09-28
+        18:00","temp_f":56.5,"condition":{"text":"Light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/day/266.png"}},{"time":"2023-09-28
+        19:00","temp_f":54.0,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/night/353.png"}},{"time":"2023-09-28
+        20:00","temp_f":51.5,"condition":{"text":"Light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/night/266.png"}},{"time":"2023-09-28
+        21:00","temp_f":50.9,"condition":{"text":"Light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/night/266.png"}},{"time":"2023-09-28
+        22:00","temp_f":50.4,"condition":{"text":"Light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/night/266.png"}},{"time":"2023-09-28
+        23:00","temp_f":49.9,"condition":{"text":"Light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/night/266.png"}}]},{"date":"2023-09-29","day":{"maxtemp_f":58.6,"mintemp_f":49.2,"totalsnow_cm":0.0,"condition":{"text":"Patchy
+        rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},"astro":{"sunrise":"07:06
+        AM","sunset":"06:55 PM"},"hour":[{"time":"2023-09-29 00:00","temp_f":49.8,"condition":{"text":"Patchy
+        rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-29
+        01:00","temp_f":49.8,"condition":{"text":"Light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/night/266.png"}},{"time":"2023-09-29
+        02:00","temp_f":49.7,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-29
+        03:00","temp_f":49.6,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-29
+        04:00","temp_f":49.5,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-29
+        05:00","temp_f":49.3,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-29
+        06:00","temp_f":49.3,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-29
+        07:00","temp_f":49.3,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2023-09-29
+        08:00","temp_f":49.2,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-29
+        09:00","temp_f":49.5,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-29
+        10:00","temp_f":49.8,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-29
+        11:00","temp_f":50.1,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-29
+        12:00","temp_f":51.6,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-29
+        13:00","temp_f":53.2,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-29
+        14:00","temp_f":54.8,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-29
+        15:00","temp_f":56.1,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/119.png"}},{"time":"2023-09-29
+        16:00","temp_f":57.4,"condition":{"text":"Patchy rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2023-09-29
+        17:00","temp_f":58.6,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/119.png"}},{"time":"2023-09-29
+        18:00","temp_f":56.3,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-29
+        19:00","temp_f":54.1,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/119.png"}},{"time":"2023-09-29
+        20:00","temp_f":51.8,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-29
+        21:00","temp_f":50.9,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-29
+        22:00","temp_f":50.0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-29
+        23:00","temp_f":49.2,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}}]},{"date":"2023-09-30","day":{"maxtemp_f":63.4,"mintemp_f":45.1,"totalsnow_cm":0.0,"condition":{"text":"Partly
+        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png"}},"astro":{"sunrise":"07:08
+        AM","sunset":"06:53 PM"},"hour":[{"time":"2023-09-30 00:00","temp_f":48.4,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-30
+        01:00","temp_f":47.7,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-30
+        02:00","temp_f":46.8,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-30
+        03:00","temp_f":46.2,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-30
+        04:00","temp_f":45.7,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-30
+        05:00","temp_f":45.1,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-30
+        06:00","temp_f":45.5,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-30
+        07:00","temp_f":46.0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-30
+        08:00","temp_f":46.4,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png"}},{"time":"2023-09-30
+        09:00","temp_f":49.1,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/119.png"}},{"time":"2023-09-30
+        10:00","temp_f":51.8,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png"}},{"time":"2023-09-30
+        11:00","temp_f":54.5,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/119.png"}},{"time":"2023-09-30
+        12:00","temp_f":57.0,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-30
+        13:00","temp_f":59.4,"condition":{"text":"Cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/119.png"}},{"time":"2023-09-30
+        14:00","temp_f":61.9,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-30
+        15:00","temp_f":62.4,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-30
+        16:00","temp_f":63.0,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-30
+        17:00","temp_f":63.4,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-30
+        18:00","temp_f":60.6,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png"}},{"time":"2023-09-30
+        19:00","temp_f":57.7,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-30
+        20:00","temp_f":54.8,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-30
+        21:00","temp_f":53.6,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-30
+        22:00","temp_f":52.3,"condition":{"text":"Partly cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2023-09-30
+        23:00","temp_f":51.0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}}]}]}}'
+  recorded_at: Tue, 26 Sep 2023 20:59:50 GMT
+recorded_with: VCR 6.2.0

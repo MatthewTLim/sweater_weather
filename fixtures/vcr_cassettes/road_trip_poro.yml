@@ -1,0 +1,93 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.weatherapi.com/v1/forecast.json?dt=2023-09-28&key=020cef30cce548b390a20037232409&q=Los%20Angeles,%20CA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.11
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 26 Sep 2023 21:08:02 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-LA1-899
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Varnish:
+      - '625969408'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - '09/26/2023 21:08:02'
+      Cdn-Edgestorageid:
+      - '954'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - 401614e2ce304886644f6e76c9596b7b
+      Cdn-Cache:
+      - MISS
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"Los Angeles","region":"California","country":"United
+        States of America","lat":34.05,"lon":-118.24,"tz_id":"America/Los_Angeles","localtime_epoch":1695762480,"localtime":"2023-09-26
+        14:08"},"current":{"last_updated":"2023-09-26 14:00","temp_f":80.1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"},"humidity":47,"cloud":0,"feelslike_f":81.2,"vis_miles":8.0,"uv":7.0},"forecast":{"forecastday":[{"date":"2023-09-28","day":{"maxtemp_f":79.7,"mintemp_f":66.4,"totalsnow_cm":0.0,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},"astro":{"sunrise":"06:45
+        AM","sunset":"06:41 PM"},"hour":[{"time":"2023-09-28 00:00","temp_f":70.7,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-28
+        01:00","temp_f":69.7,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-28
+        02:00","temp_f":68.9,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-28
+        03:00","temp_f":68.2,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-28
+        04:00","temp_f":67.6,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-28
+        05:00","temp_f":67.3,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-28
+        06:00","temp_f":66.9,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-28
+        07:00","temp_f":66.4,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-28
+        08:00","temp_f":67.8,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-28
+        09:00","temp_f":69.8,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-28
+        10:00","temp_f":72.2,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-28
+        11:00","temp_f":74.6,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-28
+        12:00","temp_f":76.3,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-28
+        13:00","temp_f":78.1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-28
+        14:00","temp_f":79.7,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-28
+        15:00","temp_f":79.3,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-28
+        16:00","temp_f":78.8,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-28
+        17:00","temp_f":78.4,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-28
+        18:00","temp_f":75.9,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2023-09-28
+        19:00","temp_f":73.6,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-28
+        20:00","temp_f":71.2,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-28
+        21:00","temp_f":70.3,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-28
+        22:00","temp_f":69.6,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2023-09-28
+        23:00","temp_f":68.7,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}}]}]}}'
+  recorded_at: Tue, 26 Sep 2023 21:08:02 GMT
+recorded_with: VCR 6.2.0
